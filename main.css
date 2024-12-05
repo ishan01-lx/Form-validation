@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;    /* Vertical center */
+    background: linear-gradient(135deg, #ffdde1, #3338d3); /* Beautiful gradient background */
+    font-family: 'Poppins', sans-serif; /* Sleek, modern font */
+    color: #333;
+}
+
+form {
+    background: #fff; /* White background for the form */
+    padding: 30px;
+    border-radius: 15px; /* Softer corners */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Larger, softer shadow */
+    width: 350px; /* Adjusted width for better spacing */
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+form:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-size: 14px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #007BFF; /* Highlighted border on focus */
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+    outline: none;
+}
+
+#sub {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Modern gradient button */
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#sub:hover {
+    background: linear-gradient(135deg, #5b0ea5, #1b4fd8); /* Slightly darker gradient on hover */
+    transform: scale(1.02); /* Subtle scale-up effect */
+}
+
+#sub:active {
+    transform: scale(0.98); /* Shrink effect on click */
+    background: linear-gradient(135deg, #4e0b8f, #153ea9); /* Darker pressed state */
+}
+
+/* Additional styling for placeholder text */
+input::placeholder {
+    color: #aaa;
+}
